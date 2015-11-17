@@ -1,0 +1,17 @@
+{% extends "header.html" %}
+{%block cssIncludes%}
+	{% include 'material/includes/material_css.html' %}
+    {% include 'material/includes/material_js.html' %}
+{%endblock%}
+{% load material_form %} 
+{%block bodyContent%} 
+	<form method="POST">
+    {% csrf_token %}
+    {% form %}
+    {% part form.email prefix %}<div class="input-group-addon">@</div>{% endpart %}
+    {% endform %}
+    <label>UserName</label><input type="text" class="mdi-communication-email prefix">
+    <button type="submit" name="_submit" class="btn">Submit</button>
+    <button class="btn btn-material-red btn-lg">Red</button>
+</form>
+{%endblock%}

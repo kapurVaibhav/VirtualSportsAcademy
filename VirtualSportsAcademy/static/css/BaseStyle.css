@@ -1,0 +1,98 @@
+ @CHARSET "ISO-8859-1";
+
+.headerCssTest {
+	
+	color:red;
+}
+
+
+base template
+.logo_div{
+	
+	padding: 15px 0;
+	z-index: 1000;
+	position: relative;
+    margin: 0 auto 0;
+    display: block;
+    width: 960px;
+    background:red;	
+}
+
+.header_block{
+	display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+#header{
+	padding: 15px 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    z-index: 1000;
+    position: relative;
+    margin: 0 auto 0;
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#header #logo {
+    display: block;
+    float: left;
+    width: 400px;
+    margin-top: 4px;
+	height:auto;
+}
+
+.header_bar{
+	display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #030;
+    float:left;
+    
+   
+#toolbar{
+	z-index: 1000;
+	position: relative;
+    margin: 0 auto 0;
+    display: block;
+    width: 960px;
+    float:left;
+}
+
+#topNavBar{
+	display: block;
+    float: left;
+    width: 1020px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    margin-left:20%;
+    background-color: #030;
+	
+}
+
+#topnavBar li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navtab
+{
+	width: 100px;
+    text-align: center;	
+} 
+.test
+{
+	color: blue;
+}

@@ -1,0 +1,19 @@
+{% load static from staticfiles %}
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">	
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/BaseStyle.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/material-fullpalette.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/material-fullpalette.min.css' %}" type="text/css">
+{%block cssIncludes%}{%endblock%}
+</head>
+<body>
+	{%block bodyContent%}{%endblock%}
+</body>
+
+</html>

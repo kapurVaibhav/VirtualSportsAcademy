@@ -1,0 +1,47 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">	
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/BaseStyle.css' %}">
+{%block cssLinks%}{%endblock%}
+</head>
+<body>
+<div class="header_block">
+	<div id="header">
+		<div id="logo">
+			<a href="#">
+			 {%block logoImage%}<img src="{% static "img/gautengLogo1.png" %}" width="280px" height="120px"> {%blockend%}
+			</a>
+		
+		</div>
+	</div>
+</div>
+<div class="header_bar">
+
+	<div id="toolbar">
+		<div id="topNavBar" style="margin-left: 138px;">
+			<ul class="nav nav-tabs" >
+				 <li class="active navtab"><a href="#">Home</a></li>
+				 <li><a href="#" class="navtab">Menu 2</a></li>
+				
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="contents">
+	{%block content%}
+	
+	{%endblock%}
+</div>
+
+</body>
+</html>
